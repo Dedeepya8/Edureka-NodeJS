@@ -1,5 +1,5 @@
 var fs= require("fs");
-const argv=require('yargs').argv
+//const argv=require('yargs').argv
 //console.log("argv",argv);
 var name=process.argv[2];
 console.log("name",name);
@@ -13,8 +13,8 @@ var check=true;
 const file_names = fs.readFileSync('filenames.txt', 'utf8')
 var files=file_names.split(" ");
 //console.log(files)
-for(index=1;index<files.length;index++){
-    //console.log("filename:",files[index]);
+for(index=0;index<files.length;index++){
+    //console.log("filename:",files[index]);f
     //console.log("currname:",name);
     if(files[index]==name){
         
