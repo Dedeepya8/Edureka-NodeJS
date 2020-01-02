@@ -1,0 +1,33 @@
+{
+  "name": "module3-assignment",
+  "version": "1.0.0",
+  "description": "Asynchronous Programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dedeepya8/Edureka-NodeJS.git"
+  },
+  "keywords": [
+    "JSON",
+    "APIs",
+    "fetch",
+    "data",
+    "Node",
+    "application"
+  ],
+  "author": "Dedeepya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dedeepya8/Edureka-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Dedeepya8/Edureka-NodeJS#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "ProjectID":121,
+        "Project Name":"Cisco",
+        "Technolgies":["Angular","Node","Routing","switching"],
+        "Resources_Allocated":2
+    },
+    {
+        "ProjectID":122,
+        "Project Name":"Google",
+        "Technolgies":["Server","Node","Search engine","Operations"],
+        "Resources_Allocated":3
+    }
+]
