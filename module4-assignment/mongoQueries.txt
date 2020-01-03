@@ -1,0 +1,89 @@
+(1) Using edureka db
+>db.movies.insertMany([
+{
+name: "Star Wars",
+genre: "Science Fiction",
+rating:6.7,
+language:"English"
+},
+{
+name: "Joker",
+genre: "Thriller",
+rating:8.3,
+language: "English"
+},
+{
+name: "Frozen II",
+genre:"Animation",
+rating:7,
+language:"English"
+},
+{
+name: "Aquaman",
+genre: "Fantasy Adventure",
+rating:6.8,
+language: "English",
+},
+{
+name: "Cats",
+genre: "Musical Fantasy",
+rating: 4.7,
+language:"English"
+}])
+
+--------------------------------------------------------------------------------
+(2)
+>db.movies.find().pretty()
+
+--------------------------------------------------------------------------------
+(3)
+>db.movies.findOne()
+--------------------------------------------------------------------------------
+(4)
+>db.movies.find().sort({"rating":-1}).limit(3).pretty()
+--------------------------------------------------------------------------------
+(5)
+i)
+>
+db.movies.update(
+{name:"Joker"},
+{
+$set:{achievements:"Super Duper hit"}
+},
+{upsert: false}
+)
+
+ii)
+>db.movies.save(
+{
+ "_id" : ObjectId("5e0f9712078c746df7c347b3"),
+name: "Frozen II",
+genre:"Animation",
+rating:7,
+language:"English",
+achievements:"Super hit"
+})
+
+--------------------------------------------------------------------------------
+(6)
+>db.movies.find(
+{achievements:{$in:["Super Duper hit","Super hit"]}},
+{name:1,
+genre:1,
+rating:1,
+language:1,
+achievements:1
+}
+).pretty()
+
+--------------------------------------------------------------------------------
+(7)
+>db.movies.find(
+{achievements:{$exists:true}},
+{name:1,
+genre:1,
+rating:1,
+language:1,
+achievements:1
+}
+).pretty()
