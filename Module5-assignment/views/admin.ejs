@@ -1,0 +1,15 @@
+<!--<%var d=new Date()%>-->
+
+<table style="width:75%">
+    <% for(let i=0;i< x.length;i++){%>
+        <tr>
+           <th><%=x[i].name%></th> 
+            <th><%=x[i].address%></th>
+            <th><%=x[i].email%></th>
+            <th><%=x[i].phoneSelected%></th>
+            <th><%=x[i].date%></th>
+            <th><%=x[i].status%></th>
+            <th><input type="button" value="send email"></th>
+        </tr>
+        <%}%>
+ </table>
