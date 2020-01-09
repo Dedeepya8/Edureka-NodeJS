@@ -1,0 +1,28 @@
+{
+  "name": "module6-assignment",
+  "version": "1.0.0",
+  "description": "Building Node.js Applications using ES6",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dedeepya8/Edureka-NodeJS.git"
+  },
+  "author": "Dedeepya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dedeepya8/Edureka-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Dedeepya8/Edureka-NodeJS#readme"
+}

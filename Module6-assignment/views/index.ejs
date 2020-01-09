@@ -1,0 +1,40 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<h2>Add new Bug</h2>
+<form action="/addData" method="POST">
+    Title:<input type="text" name="title" required><br>
+    Description:<input type="text" name="description"><br>
+    Date:<input type="date" name="date"><br>
+    Assignee:<input type="text" name="assignee"><br>
+    <input type="submit" value="Add">&nbsp;
+    <input type="reset" value="Cancel"><br>
+</form>
+
+
+<table id="myTable" style="width:100%">
+    <caption><h1>List of bugs</h1></caption>
+    <thead>
+        <tr>
+            <th ><b>Title</b></th>
+            <th><b>Description</b></th>
+            <th><b>Date</b></th>
+            <th><b>Assignee</b></th>
+            <th><b>Days left</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0; i<data.length; i++) {%>
+        <tr>
+            <td><%= data[i].title %></td>
+            <td><%= data[i].description %></td>
+            <td><%= data[i].date %></td>
+            <td><%= data[i].assignee %></td>
+            <td><%= data[i].days %></td>
+        </tr>
+        <% } %>
+    </tbody>
+    
+</table>
